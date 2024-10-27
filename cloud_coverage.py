@@ -134,10 +134,10 @@ class SkyImage(Dataset):
 
 # Method to initialize CatBoost model
 def initialize_models():
-	cbt_model = pickle.load(open("/home/gfg19509@gfg.geeksforgeeks.org/PawanKrGunjan/Computer Vision/Skycam/catboost_model.sav", 'rb'))
+	cbt_model = pickle.load(open("models/catboost_model.sav", 'rb'))
 	clip_model = CLIPModel().to(CFG["device"])
 	clip_model.load_state_dict(torch.load(
-		"/home/gfg19509@gfg.geeksforgeeks.org/PawanKrGunjan/Computer Vision/Skycam/clip_model.pt", map_location=CFG["device"]))
+		"models/best_model.pt", map_location=CFG["device"]))
 	clip_model.eval()
 	return cbt_model, clip_model
 

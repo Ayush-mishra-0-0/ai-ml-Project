@@ -1,1 +1,42 @@
-hello
+hello2024-10-27 14:42:42,543 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-10-27 14:42:43,255 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-27 14:42:45,012 - ERROR - Error initializing models: Attempting to deserialize object on CUDA device 0 but torch.cuda.device_count() is 0. Please use torch.load with map_location to map your storages to an existing device.
+2024-10-27 14:45:57,026 - INFO - Initializing models...
+2024-10-27 14:45:57,026 - INFO - Using device: cuda
+2024-10-27 14:45:57,428 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-10-27 14:45:58,287 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-27 14:45:59,702 - ERROR - Error initializing models: Attempting to deserialize object on CUDA device 0 but torch.cuda.device_count() is 0. Please use torch.load with map_location to map your storages to an existing device.
+2024-10-27 14:45:59,702 - ERROR - Application startup failed: Attempting to deserialize object on CUDA device 0 but torch.cuda.device_count() is 0. Please use torch.load with map_location to map your storages to an existing device.
+2024-10-27 14:47:20,940 - INFO - Initializing models...
+2024-10-27 14:47:20,940 - INFO - Using device: cuda
+2024-10-27 14:47:20,940 - INFO - Using device: cuda
+2024-10-27 14:47:21,310 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-10-27 14:47:22,129 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-27 14:47:23,289 - ERROR - Error initializing models: Attempting to deserialize object on CUDA device 0 but torch.cuda.device_count() is 0. Please use torch.load with map_location to map your storages to an existing device.
+2024-10-27 14:47:23,289 - ERROR - Application startup failed: Attempting to deserialize object on CUDA device 0 but torch.cuda.device_count() is 0. Please use torch.load with map_location to map your storages to an existing device.
+2024-10-27 14:47:58,564 - INFO - Initializing models...
+2024-10-27 14:47:58,564 - INFO - Using device: cuda
+2024-10-27 14:47:58,564 - INFO - Using device: cuda
+2024-10-27 14:47:58,990 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-10-27 14:47:59,665 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-27 14:48:00,846 - ERROR - Error initializing models: Attempting to deserialize object on CUDA device 0 but torch.cuda.device_count() is 0. Please use torch.load with map_location to map your storages to an existing device.
+2024-10-27 14:48:00,846 - ERROR - Application startup failed: Attempting to deserialize object on CUDA device 0 but torch.cuda.device_count() is 0. Please use torch.load with map_location to map your storages to an existing device.
+2024-10-27 14:52:06,223 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2024-10-27 14:52:06,248 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2024-10-27 14:52:07,235 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2024-10-27 14:58:20,777 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2024-10-27 14:58:20,808 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2024-10-27 14:58:21,555 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2024-10-27 14:58:31,358 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-10-27 14:58:32,068 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-27 19:08:28,625 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-10-27 19:08:28,954 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-27 19:09:02,416 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-10-27 19:09:02,729 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-27 19:09:04,904 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2024-10-27 19:09:04,932 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2024-10-27 19:09:05,899 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2024-10-27 19:10:56,001 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-10-27 19:10:56,972 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-27 19:10:58,807 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2024-10-27 19:10:58,827 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
