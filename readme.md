@@ -58,6 +58,75 @@ python app.py
 <!-- image show  website.png -->
 ![Web Interface Screenshot](website.png)
 
+## 🔍 Technical Implementation Details
+
+### Core Components
+
+#### 1. Model Architecture
+- **OptimizedCLIPModel**: Main model implementing CLIP (Contrastive Language-Image Pre-training) architecture
+  - Uses ResNet50 for image encoding
+  - DistilBERT for text encoding
+  - Projection heads for both image and text features
+  - Contrastive learning approach with temperature-scaled similarity
+
+#### 2. Memory Efficient Components
+- **MemoryEfficientDataset**:
+  - Implements efficient data loading with sharding
+  - Validates images before loading
+  - Handles tokenization of captions
+  - Implements on-the-fly image transformations
+
+- **MemoryEfficientImageEncoder**:
+  - Based on ResNet50 architecture
+  - Supports gradient checkpointing
+  - Configurable pretrained weights
+  - Global average pooling for feature extraction
+
+- **MemoryEfficientTextEncoder**:
+  - Uses DistilBERT for text encoding
+  - Supports gradient checkpointing
+  - Configurable frozen/trainable parameters
+
+#### 3. Training Features
+- Mixed precision training support
+- Gradient accumulation
+- Distributed training capability
+- Memory usage tracking
+- Cosine annealing learning rate scheduler
+- AdamW optimizer with weight decay
+- Automatic model checkpointing
+
+### Key Configuration Parameters
+```python
+class Config:
+    model_name = 'resnet50'
+    image_embedding = 2048
+    text_encoder_model = 'distilbert-base-uncased'
+    text_embedding = 768
+    projection_dim = 256
+    batch_size = 16
+    temperature = 1.0
+    mixed_precision = True
+    gradient_checkpointing = True
+```
+
+### Training Pipeline
+1. **Data Preparation**:
+   - Loads and splits dataset into train/validation
+   - Applies image transformations (resize, normalize, augmentations)
+   - Tokenizes text captions
+
+2. **Training Loop**:
+   - Implements gradient accumulation for larger effective batch sizes
+   - Uses mixed precision training for memory efficiency
+   - Monitors and logs memory usage
+   - Saves best model based on validation loss
+
+3. **Optimization**:
+   - Separate learning rates for head and encoder
+   - Weight decay with parameter-specific settings
+   - Gradient checkpointing for memory efficiency
+
 
 ### API Usage
 ```python
