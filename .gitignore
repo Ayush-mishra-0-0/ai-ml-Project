@@ -3,3 +3,4 @@ catboost_info
 models
 __pycache__
 .gradio
+cache
