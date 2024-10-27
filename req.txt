@@ -1,0 +1,13 @@
+numpy
+pandas
+matplotlib
+albumentations
+opencv-python
+torch
+timm
+tqdm
+scikit-learn
+catboost
+transformers
+gradio
+git+https://github.com/openai/CLIP.git

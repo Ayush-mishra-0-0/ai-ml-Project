@@ -1,0 +1,80 @@
+Course
+Cloud Coverage Prediction using Skycam Images
+Last Updated : 28 Sep, 2023
+Cloud coverage prediction is critical in weather forecasting and a variety of applications such as solar energy generation, aviation, and climate monitoring. Accurate forecasts help decision-makers and sectors plan for and adapt to changing weather conditions. The advancement of artificial intelligence and computer vision techniques in recent years has created new opportunities for enhancing cloud coverage forecasts.
+
+One promising approach is the use of SkyCam images.
+
+In the face of rapidly changing global climate patterns, there is an urgent need for innovative tools and technologies to better understand and predict weather-related phenomena.
+One crucial aspect of climate analysis is the assessment of cloud coverage, which plays a pivotal role in influencing weather conditions and climate trends.
+Experts may not always be available to monitor climatic shifts. Therefore, developing an automated weather monitoring system is crucial for various applications, including agriculture and disaster management.
+The purpose of this research is to estimate the opaque Cloud Coverage from a Skycam Image using AI/ML methodologies.
+
+Cloud Coverage Prediction using Skycam Images -Geeksforgeeks
+Cloud Coverage Prediction using Skycam Images
+
+Table of Content
+Cloud Coverage Prediction using SkyCam Images
+Implementations Cloud Coverage Prediction using SkyCam Images
+Cloud Coverage Prediction Models:
+Part I. Model Building & Traning Pipeline
+A. Clip Model Finetuning
+B. Catboost Regressor Model Building
+Part II. UI Inference Codes for Deployed Model
+Results:
+Cloud Coverage Prediction using SkyCam Images
+The integration of Computer Vision and Machine Learning, leading to regression and classification use cases, has been one of the major trending research areas. The purpose of this research is to estimate cloud coverage using SkyCam images and Computer Vision techniques. We hope to develop a system that can deliver real-time or short-term forecasts of cloud cover percentages by training predictive algorithms. This predictive skill has the potential to improve existing weather forecasting models and decision-making in industries such as energy production and transportation.
+
+To address this imperative, a novel approach leveraging Computer Vision and Machine Learning techniques is used to develop cloud coverage calculators from skycam images.
+Cloud coverage is a key parameter in weather forecasting, and automating its assessment can significantly improve weather predictions.
+Furthermore, it can benefit industries reliant on weather conditions, such as renewable energy generation and transportation.
+In the energy domain, specifically related to climatic patterns, the robust cloud coverage calculator model can accurately calculate cloud coverage from skycam images. The model aims to analyze the cloud formations in the provided images and provide a percentage indicating the extent of cloud coverage.
+Moreover, integrating this cloud coverage model with skycam can serve as an early warning system for impending storms, heavy rains, and climatic shifts, helping to take preventive measures and ensure public safety.
+
+Before delving into the core model development, it’s essential to acquire the domain knowledge required to build this project!
+
+Domain Knowledge
+Skycam Images: SkyCam, short for Sky Camera, is a specialized camera system often installed in various locations, including airports, research stations, and meteorological facilities. These cameras continuously capture images of the sky, providing valuable data for weather monitoring.
+Skycam Image Samples-Geeksforgeeks
+Skycam Image Samples
+
+Implementations Cloud Coverage Prediction using SkyCam Images
+System Architecture for the project:
+There are 2 pipelines as shown below, one is for Training both the models i.e. CLIP & Catboost & other is for Inference.
+Detailed explanation of system architecture is provided in Implementations Cloud Coverage Prediction using SkyCam Images
+Cloud Coverage Prediction Pipeline-Geeksforgeeks
+Cloud Coverage Prediction Pipeline
+
+Prerequsite:
+Programming Language: Python
+AI/ML Platform for Model Training: Jupyter Notebook
+Web App: Gradio
+Libraries/Requirements: OpenCv, timm, pytorch, transformers, clip, Catboost
+DataSet:
+Data Contains 1,33,653 skycam images with their opaque cloud coverage in percentage.
+During scraping this data, I have used OCR to extract the cloud coverage in percentage.
+Dataset Link : Skycam Images
+Cloud Coverage Prediction Models:
+1. CLIP Model & its working:
+
+There are various methods to extract features from images, but here, have utilized the Contrastive Language Image Pretrained (CLIP) Model.
+CLIP is typically used for image-text similarity problems.
+The CLIP model comprises 3 main components: Image Encoder, Text Encoder, and Projection Head.
+Image Encoder: Utilizes ResNet50 to extract features from images in vector format.
+Text Encoder: Utilizes Distilled-Bert to extract features from text in vector format.
+Projection Head: Transforms both image and text vectors into the same size/shape.
+A Dot Product is applied, creating a knowledge base, i.e., image-text mapping knowledge.
+During inference, when an image is passed, image/text vectors are created, and a similarity score is generated between the knowledge base and the image/text vector to provide results.
+2. Catboost Model:
+
+Used Catboost Regressor to calculate cloud coverage.
+Catboost is chosen for its robustness to outliers, high efficiency, out-of-the-box support, and faster processing compared to other bagging and generic models especially when we have image feature vectors.
+Technical Workflow Steps:
+Initially, we have data: images mapped with their cloud coverage values.
+Generate text from the cloud coverage value, e.g. if cloud coverage = 97, then Text = “There is High Cloud Coverage. Opaque Cloud Coverage is 97%.”
+Fine-tune the Contrastive Language Image Pretrained (CLIP) model on the skycam images + corresponding text.
+Extraction of features from skycam images is done using the Fine-tuned CLIP model’s Image Encoder.
+Extracted features are treated as ‘x’ (independent variables with a size of 2048) and cloud coverage values from Step 1 are treated as ‘y’ (dependent features) for the Catboost model.
+Training, validation & testing records: 70,168 | 30,072 | 33,414.
+The best hyperparameters for the Catboost model are determined, and a Regressor is implemented to predict cloud coverage in percentages.
+Later, developed and deployed a Gradio App on Hugging Face Spaces, where users input a skycam image and receive the opaque cloud coverage percentage as output.

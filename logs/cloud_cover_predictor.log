@@ -1,0 +1,13 @@
+2024-10-27 12:37:10,129 - ERROR - Error loading pickle file clip_mdl.pkl: Can't get attribute 'OptimizedCLIPModel' on <module '__main__' from 'C:\\Users\\Ayush\\OneDrive\\Desktop\\ai-ml_project\\cbt_model.py'>
+Traceback (most recent call last):
+  File "C:\Users\Ayush\OneDrive\Desktop\ai-ml_project\cbt_model.py", line 48, in safe_load_pickle
+    return pickle.load(f)
+           ^^^^^^^^^^^^^^
+AttributeError: Can't get attribute 'OptimizedCLIPModel' on <module '__main__' from 'C:\\Users\\Ayush\\OneDrive\\Desktop\\ai-ml_project\\cbt_model.py'>
+
+2024-10-27 12:37:10,129 - ERROR - Error in main function: Failed to load CLIP model
+Traceback (most recent call last):
+  File "C:\Users\Ayush\OneDrive\Desktop\ai-ml_project\cbt_model.py", line 231, in main
+    raise ValueError('Failed to load CLIP model')
+ValueError: Failed to load CLIP model
+
