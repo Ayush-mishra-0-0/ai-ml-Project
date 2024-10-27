@@ -55,6 +55,9 @@ python app.py
 ```
 2. Open your browser and navigate to `http://localhost:7860`
 3. Upload a sky image and click "Submit" to get the cloud coverage prediction
+<!-- image show  website.png -->
+![Web Interface Screenshot](website.png)
+
 
 ### API Usage
 ```python
