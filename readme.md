@@ -1,9 +1,10 @@
-# Sky Image Cloud Cover Predictor
+# Temperature prediction from Images Of Cloud
 
 ## Overview
-This project implements a machine learning system that automatically predicts cloud coverage percentage from sky camera images. The system uses computer vision and machine learning techniques to analyze hemispherical sky images and provide accurate cloud coverage estimates.
+This project implements a machine learning system that automatically predicts temperature from sky camera images. The system uses computer vision and machine learning techniques to analyze hemispherical sky images and provide accurate cloud coverage estimates.
 
 ## 🌟 Features
+- Detects the temperature from percentage of Cloud Cover
 - Real-time cloud coverage prediction from sky images
 - Web-based user interface for easy image upload
 - Support for hemispherical sky camera images
@@ -16,7 +17,7 @@ This project implements a machine learning system that automatically predicts cl
 ├── app.py                 # Flask web application
 ├── cloud_coverage.py      # Core prediction logic
 ├── main.ipynb            # Development notebook
-├── cat_boost.ipynb       # Model training notebook
+├── train.ipynb       # Model training notebook
 ├── train.py              # Training script
 ├── temp.py              # Temporary testing file
 ├── utils/               # Utility functions
@@ -31,7 +32,7 @@ This project implements a machine learning system that automatically predicts cl
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/sky-cloud-predictor.git
+git clone https://github.com/Ayush-mishra-0_0/temp_from_cloud_images.git
 cd sky-cloud-predictor
 ```
 
@@ -56,7 +57,7 @@ python app.py
 2. Open your browser and navigate to `http://localhost:7860`
 3. Upload a sky image and click "Submit" to get the cloud coverage prediction
 <!-- image show  website.png -->
-![Web Interface Screenshot](website.png)
+![Web Interface Screenshot](latex/website.png)
 
 ## 🔍 Technical Implementation Details
 

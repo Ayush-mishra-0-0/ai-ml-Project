@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import gradio as gr
 import pickle
-from train import Config, OptimizedCLIPModel
+from utils.train import Config, OptimizedCLIPModel
 import os
 
 def load_models(clip_path='models/best_model.pt', catboost_path='models/catboost_model.sav'):

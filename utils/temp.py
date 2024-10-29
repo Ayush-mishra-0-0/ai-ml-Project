@@ -26,7 +26,7 @@ import argparse
 from torch.utils.checkpoint import checkpoint
 import psutil
 import json
-from train import Config, OptimizedCLIPModel
+from utils.train import Config, OptimizedCLIPModel
 
 folder = 'dataset'
 df = pd.read_csv(folder+"/x.csv")
