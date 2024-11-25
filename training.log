@@ -60,3 +60,204 @@ hello2024-10-27 14:42:42,543 - INFO - Loading pretrained weights from Hugging Fa
 2024-10-27 23:09:24,010 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
 2024-10-27 23:09:24,830 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
 2024-10-27 23:09:25,693 - INFO - HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2024-11-07 20:34:16,180 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-07 20:34:17,215 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-07 20:34:20,454 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2024-11-07 20:34:20,480 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2024-11-07 20:34:21,730 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2024-11-07 20:34:22,227 - INFO - HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2024-11-25 21:21:56,065 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-25 21:21:56,502 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-25 21:24:37,026 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-25 21:24:37,393 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-25 21:24:40,463 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-25 21:24:40,464 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-25 21:24:40,472 - INFO -  * Restarting with stat
+2024-11-25 21:24:48,714 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-25 21:24:49,131 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-25 21:24:51,351 - WARNING -  * Debugger is active!
+2024-11-25 21:24:51,359 - INFO -  * Debugger PIN: 107-346-129
+2024-11-25 21:25:01,343 - INFO - 127.0.0.1 - - [25/Nov/2024 21:25:01] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-11-25 21:25:01,542 - INFO - 127.0.0.1 - - [25/Nov/2024 21:25:01] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-11-25 21:25:01,545 - INFO - 127.0.0.1 - - [25/Nov/2024 21:25:01] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-11-25 21:25:01,608 - INFO - 127.0.0.1 - - [25/Nov/2024 21:25:01] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=nKeclhaahgXnZnZuPqTT HTTP/1.1" 200 -
+2024-11-25 21:25:01,629 - INFO - 127.0.0.1 - - [25/Nov/2024 21:25:01] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-11-25 21:26:22,939 - INFO - 127.0.0.1 - - [25/Nov/2024 21:26:22] "GET / HTTP/1.1" 200 -
+2024-11-25 21:26:22,975 - INFO - 127.0.0.1 - - [25/Nov/2024 21:26:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-25 21:26:26,995 - INFO - 127.0.0.1 - - [25/Nov/2024 21:26:26] "GET / HTTP/1.1" 200 -
+2024-11-25 21:26:32,709 - INFO - 127.0.0.1 - - [25/Nov/2024 21:26:32] "[33mGET /upload HTTP/1.1[0m" 404 -
+2024-11-25 21:27:02,352 - INFO - 127.0.0.1 - - [25/Nov/2024 21:27:02] "GET / HTTP/1.1" 200 -
+2024-11-25 21:27:11,922 - INFO - 127.0.0.1 - - [25/Nov/2024 21:27:11] "POST / HTTP/1.1" 200 -
+2024-11-25 21:28:54,049 - INFO -  * Detected change in 'C:\\Users\\Ayush\\OneDrive\\Desktop\\ai-ml_project\\app.py', reloading
+2024-11-25 21:28:55,627 - INFO -  * Restarting with stat
+2024-11-25 21:29:04,444 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-25 21:29:04,828 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-25 21:29:09,361 - WARNING -  * Debugger is active!
+2024-11-25 21:29:09,373 - INFO -  * Debugger PIN: 107-346-129
+2024-11-25 21:29:09,423 - INFO - 127.0.0.1 - - [25/Nov/2024 21:29:09] "GET / HTTP/1.1" 200 -
+2024-11-25 21:29:19,790 - INFO - 127.0.0.1 - - [25/Nov/2024 21:29:19] "POST / HTTP/1.1" 200 -
+2024-11-25 21:30:59,017 - INFO -  * Detected change in 'C:\\Users\\Ayush\\OneDrive\\Desktop\\ai-ml_project\\app.py', reloading
+2024-11-25 21:31:00,404 - INFO -  * Restarting with stat
+2024-11-25 21:31:07,805 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-25 21:31:08,180 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-25 21:31:11,271 - WARNING -  * Debugger is active!
+2024-11-25 21:31:11,283 - INFO -  * Debugger PIN: 107-346-129
+2024-11-25 21:37:01,206 - INFO -  * Detected change in 'C:\\Users\\Ayush\\OneDrive\\Desktop\\ai-ml_project\\app.py', reloading
+2024-11-25 21:37:03,328 - INFO -  * Restarting with stat
+2024-11-25 21:37:12,820 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-25 21:37:13,278 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-25 21:37:17,509 - WARNING -  * Debugger is active!
+2024-11-25 21:37:17,525 - INFO -  * Debugger PIN: 107-346-129
+2024-11-25 21:37:17,566 - INFO - 127.0.0.1 - - [25/Nov/2024 21:37:17] "[33mGET / HTTP/1.1[0m" 404 -
+2024-11-25 21:40:36,048 - INFO -  * Detected change in 'C:\\Users\\Ayush\\OneDrive\\Desktop\\ai-ml_project\\app.py', reloading
+2024-11-25 21:40:37,455 - INFO -  * Restarting with stat
+2024-11-25 21:40:46,907 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-25 21:40:47,355 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-25 21:41:12,135 - INFO - 127.0.0.1 - - [25/Nov/2024 21:41:12] "[33mGET / HTTP/1.1[0m" 404 -
+2024-11-25 21:41:13,960 - INFO - 127.0.0.1 - - [25/Nov/2024 21:41:13] "[33mGET / HTTP/1.1[0m" 404 -
+2024-11-25 21:42:02,876 - INFO - 127.0.0.1 - - [25/Nov/2024 21:42:02] "[33mGET / HTTP/1.1[0m" 404 -
+2024-11-25 21:43:48,970 - INFO - 127.0.0.1 - - [25/Nov/2024 21:43:48] "[33mGET / HTTP/1.1[0m" 404 -
+2024-11-25 21:44:02,956 - INFO - 127.0.0.1 - - [25/Nov/2024 21:44:02] "[33mGET / HTTP/1.1[0m" 404 -
+2024-11-25 21:44:03,792 - INFO - 127.0.0.1 - - [25/Nov/2024 21:44:03] "[33mGET / HTTP/1.1[0m" 404 -
+2024-11-25 21:44:05,122 - INFO - 127.0.0.1 - - [25/Nov/2024 21:44:05] "[33mGET / HTTP/1.1[0m" 404 -
+2024-11-25 21:45:44,164 - INFO - 127.0.0.1 - - [25/Nov/2024 21:45:44] "[33mGET / HTTP/1.1[0m" 404 -
+2024-11-25 21:45:45,313 - INFO - 127.0.0.1 - - [25/Nov/2024 21:45:45] "[33mGET / HTTP/1.1[0m" 404 -
+2024-11-25 21:46:07,306 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-25 21:46:07,702 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-25 21:46:10,770 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.209.127:5000
+2024-11-25 21:46:10,771 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-25 21:46:10,772 - INFO -  * Restarting with stat
+2024-11-25 21:46:18,263 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-25 21:46:18,573 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-25 21:46:21,742 - WARNING -  * Debugger is active!
+2024-11-25 21:46:21,753 - INFO -  * Debugger PIN: 107-346-129
+2024-11-25 21:46:21,783 - INFO - 127.0.0.1 - - [25/Nov/2024 21:46:21] "GET / HTTP/1.1" 200 -
+2024-11-25 21:46:22,274 - INFO - 127.0.0.1 - - [25/Nov/2024 21:46:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-25 21:46:33,301 - INFO - 127.0.0.1 - - [25/Nov/2024 21:46:33] "GET / HTTP/1.1" 200 -
+2024-11-25 21:46:33,774 - INFO - 127.0.0.1 - - [25/Nov/2024 21:46:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-25 21:46:57,283 - INFO - 127.0.0.1 - - [25/Nov/2024 21:46:57] "POST /predict/cloudcover HTTP/1.1" 200 -
+2024-11-25 21:47:12,273 - ERROR - Temperature prediction error: Found unknown categories ['sunny'] in column 0 during transform
+2024-11-25 21:47:12,274 - INFO - 127.0.0.1 - - [25/Nov/2024 21:47:12] "[35m[1mPOST /predict/temperature HTTP/1.1[0m" 500 -
+2024-11-25 22:08:16,160 - INFO -  * Detected change in 'C:\\Users\\Ayush\\OneDrive\\Desktop\\ai-ml_project\\app.py', reloading
+2024-11-25 22:08:18,035 - INFO -  * Restarting with stat
+2024-11-25 22:08:30,690 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-25 22:08:31,462 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-25 22:08:34,892 - WARNING -  * Debugger is active!
+2024-11-25 22:08:34,904 - INFO -  * Debugger PIN: 107-346-129
+2024-11-25 22:11:06,350 - ERROR - Temperature prediction error: predict_temperature() missing 2 required positional arguments: 'xgb_min_temp' and 'encoder'
+2024-11-25 22:11:06,354 - INFO - 127.0.0.1 - - [25/Nov/2024 22:11:06] "[35m[1mPOST /predict/temperature HTTP/1.1[0m" 500 -
+2024-11-25 22:16:20,497 - INFO - 127.0.0.1 - - [25/Nov/2024 22:16:20] "GET / HTTP/1.1" 200 -
+2024-11-25 22:16:28,055 - INFO - 127.0.0.1 - - [25/Nov/2024 22:16:28] "POST /predict/cloudcover HTTP/1.1" 200 -
+2024-11-25 22:16:38,617 - ERROR - Temperature prediction error: predict_temperature() missing 2 required positional arguments: 'xgb_min_temp' and 'encoder'
+2024-11-25 22:16:38,619 - INFO - 127.0.0.1 - - [25/Nov/2024 22:16:38] "[35m[1mPOST /predict/temperature HTTP/1.1[0m" 500 -
+2024-11-25 22:16:47,371 - INFO -  * Detected change in 'C:\\Users\\Ayush\\OneDrive\\Desktop\\ai-ml_project\\app.py', reloading
+2024-11-25 22:16:48,549 - INFO -  * Restarting with stat
+2024-11-25 22:16:56,265 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-25 22:16:56,812 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-25 22:17:00,050 - WARNING -  * Debugger is active!
+2024-11-25 22:17:00,061 - INFO -  * Debugger PIN: 107-346-129
+2024-11-25 22:17:00,108 - INFO - 127.0.0.1 - - [25/Nov/2024 22:17:00] "GET / HTTP/1.1" 200 -
+2024-11-25 22:17:20,445 - INFO - 127.0.0.1 - - [25/Nov/2024 22:17:20] "POST /predict/cloudcover HTTP/1.1" 200 -
+2024-11-25 22:17:29,641 - ERROR - Temperature prediction error: Found unknown categories ['rainy'] in column 0 during transform
+2024-11-25 22:17:29,642 - INFO - 127.0.0.1 - - [25/Nov/2024 22:17:29] "[35m[1mPOST /predict/temperature HTTP/1.1[0m" 500 -
+2024-11-25 22:19:03,601 - ERROR - Temperature prediction error: Found unknown categories ['rainy'] in column 0 during transform
+2024-11-25 22:19:03,603 - INFO - 127.0.0.1 - - [25/Nov/2024 22:19:03] "[35m[1mPOST /predict/temperature HTTP/1.1[0m" 500 -
+2024-11-25 22:19:04,933 - ERROR - Temperature prediction error: Found unknown categories ['rainy'] in column 0 during transform
+2024-11-25 22:19:04,935 - INFO - 127.0.0.1 - - [25/Nov/2024 22:19:04] "[35m[1mPOST /predict/temperature HTTP/1.1[0m" 500 -
+2024-11-25 22:19:06,924 - INFO - 127.0.0.1 - - [25/Nov/2024 22:19:06] "GET / HTTP/1.1" 200 -
+2024-11-25 22:19:13,275 - INFO - 127.0.0.1 - - [25/Nov/2024 22:19:13] "POST /predict/cloudcover HTTP/1.1" 200 -
+2024-11-25 22:19:29,115 - ERROR - Temperature prediction error: all the input arrays must have same number of dimensions, but the array at index 0 has 1 dimension(s) and the array at index 2 has 2 dimension(s)
+2024-11-25 22:19:29,118 - INFO - 127.0.0.1 - - [25/Nov/2024 22:19:29] "[35m[1mPOST /predict/temperature HTTP/1.1[0m" 500 -
+2024-11-25 22:21:17,289 - INFO -  * Detected change in 'C:\\Users\\Ayush\\OneDrive\\Desktop\\ai-ml_project\\app.py', reloading
+2024-11-25 22:21:18,546 - INFO -  * Restarting with stat
+2024-11-25 22:21:26,481 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-25 22:21:26,895 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-25 22:21:30,018 - WARNING -  * Debugger is active!
+2024-11-25 22:21:30,029 - INFO -  * Debugger PIN: 107-346-129
+2024-11-25 22:21:30,071 - INFO - 127.0.0.1 - - [25/Nov/2024 22:21:30] "GET / HTTP/1.1" 200 -
+2024-11-25 22:21:37,304 - INFO - 127.0.0.1 - - [25/Nov/2024 22:21:37] "POST /predict/cloudcover HTTP/1.1" 200 -
+2024-11-25 22:21:57,556 - ERROR - Temperature prediction error: Object of type float32 is not JSON serializable
+2024-11-25 22:21:57,557 - INFO - 127.0.0.1 - - [25/Nov/2024 22:21:57] "[35m[1mPOST /predict/temperature HTTP/1.1[0m" 500 -
+2024-11-25 22:22:47,232 - INFO -  * Detected change in 'C:\\Users\\Ayush\\OneDrive\\Desktop\\ai-ml_project\\app.py', reloading
+2024-11-25 22:22:48,506 - INFO -  * Restarting with stat
+2024-11-25 22:24:09,276 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-25 22:24:09,608 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-25 22:24:11,788 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.209.127:5000
+2024-11-25 22:24:11,789 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-25 22:24:11,792 - INFO -  * Restarting with stat
+2024-11-25 22:24:19,502 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-25 22:24:19,871 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-25 22:24:22,894 - WARNING -  * Debugger is active!
+2024-11-25 22:24:22,904 - INFO -  * Debugger PIN: 107-346-129
+2024-11-25 22:24:22,943 - INFO - 127.0.0.1 - - [25/Nov/2024 22:24:22] "GET / HTTP/1.1" 200 -
+2024-11-25 22:24:38,735 - ERROR - Temperature prediction error: all the input arrays must have same number of dimensions, but the array at index 0 has 1 dimension(s) and the array at index 2 has 2 dimension(s)
+2024-11-25 22:24:38,738 - INFO - 127.0.0.1 - - [25/Nov/2024 22:24:38] "[35m[1mPOST /predict/temperature HTTP/1.1[0m" 500 -
+2024-11-25 22:29:43,374 - INFO -  * Detected change in 'C:\\Users\\Ayush\\OneDrive\\Desktop\\ai-ml_project\\app.py', reloading
+2024-11-25 22:29:44,498 - INFO -  * Restarting with stat
+2024-11-25 22:29:52,403 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-25 22:29:52,833 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-25 22:29:54,864 - WARNING -  * Debugger is active!
+2024-11-25 22:29:54,873 - INFO -  * Debugger PIN: 107-346-129
+2024-11-25 22:31:57,506 - INFO -  * Detected change in 'C:\\Users\\Ayush\\OneDrive\\Desktop\\ai-ml_project\\app.py', reloading
+2024-11-25 22:31:58,679 - INFO -  * Restarting with stat
+2024-11-25 22:32:06,653 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-25 22:32:07,108 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-25 22:32:09,218 - WARNING -  * Debugger is active!
+2024-11-25 22:32:09,224 - INFO -  * Debugger PIN: 107-346-129
+2024-11-25 22:33:05,541 - INFO -  * Detected change in 'C:\\Users\\Ayush\\OneDrive\\Desktop\\ai-ml_project\\app.py', reloading
+2024-11-25 22:33:06,715 - INFO -  * Restarting with stat
+2024-11-25 22:33:15,067 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-25 22:33:15,450 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-25 22:33:18,536 - WARNING -  * Debugger is active!
+2024-11-25 22:33:18,546 - INFO -  * Debugger PIN: 107-346-129
+2024-11-25 22:33:18,605 - INFO - 127.0.0.1 - - [25/Nov/2024 22:33:18] "GET / HTTP/1.1" 200 -
+2024-11-25 22:33:29,398 - ERROR - Temperature prediction error: Object of type ndarray is not JSON serializable
+2024-11-25 22:33:29,399 - INFO - 127.0.0.1 - - [25/Nov/2024 22:33:29] "[35m[1mPOST /predict/temperature HTTP/1.1[0m" 500 -
+2024-11-25 22:36:20,225 - INFO -  * Detected change in 'C:\\Users\\Ayush\\OneDrive\\Desktop\\ai-ml_project\\app.py', reloading
+2024-11-25 22:36:21,473 - INFO -  * Restarting with stat
+2024-11-25 22:36:29,057 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-25 22:36:29,604 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-25 22:36:31,636 - WARNING -  * Debugger is active!
+2024-11-25 22:36:31,645 - INFO -  * Debugger PIN: 107-346-129
+2024-11-25 22:36:42,916 - INFO -  * Detected change in 'C:\\Users\\Ayush\\OneDrive\\Desktop\\ai-ml_project\\app.py', reloading
+2024-11-25 22:36:44,004 - INFO -  * Restarting with stat
+2024-11-25 22:36:51,719 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-25 22:36:52,066 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-25 22:36:54,144 - WARNING -  * Debugger is active!
+2024-11-25 22:36:54,151 - INFO -  * Debugger PIN: 107-346-129
+2024-11-25 22:36:54,180 - INFO - 127.0.0.1 - - [25/Nov/2024 22:36:54] "GET / HTTP/1.1" 200 -
+2024-11-25 22:37:05,295 - ERROR - Temperature prediction error: Object of type ndarray is not JSON serializable
+2024-11-25 22:37:05,296 - INFO - 127.0.0.1 - - [25/Nov/2024 22:37:05] "[35m[1mPOST /predict/temperature HTTP/1.1[0m" 500 -
+2024-11-25 22:37:33,071 - INFO -  * Detected change in 'C:\\Users\\Ayush\\OneDrive\\Desktop\\ai-ml_project\\app.py', reloading
+2024-11-25 22:37:34,341 - INFO -  * Restarting with stat
+2024-11-25 22:37:41,452 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-25 22:37:41,826 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-25 22:37:44,047 - WARNING -  * Debugger is active!
+2024-11-25 22:37:44,056 - INFO -  * Debugger PIN: 107-346-129
+2024-11-25 22:37:44,632 - INFO - 127.0.0.1 - - [25/Nov/2024 22:37:44] "GET / HTTP/1.1" 200 -
+2024-11-25 22:37:51,208 - ERROR - Temperature prediction error: Object of type float32 is not JSON serializable
+2024-11-25 22:37:51,209 - INFO - 127.0.0.1 - - [25/Nov/2024 22:37:51] "[35m[1mPOST /predict/temperature HTTP/1.1[0m" 500 -
+2024-11-25 22:39:12,508 - INFO -  * Detected change in 'C:\\Users\\Ayush\\OneDrive\\Desktop\\ai-ml_project\\app.py', reloading
+2024-11-25 22:39:13,826 - INFO -  * Restarting with stat
+2024-11-25 22:39:21,065 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-25 22:39:21,519 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-25 22:39:23,704 - WARNING -  * Debugger is active!
+2024-11-25 22:39:23,713 - INFO -  * Debugger PIN: 107-346-129
+2024-11-25 22:39:30,391 - INFO - 127.0.0.1 - - [25/Nov/2024 22:39:30] "GET / HTTP/1.1" 200 -
+2024-11-25 22:39:37,841 - ERROR - Temperature prediction error: app.json.response() takes either args or kwargs, not both
+2024-11-25 22:39:37,842 - INFO - 127.0.0.1 - - [25/Nov/2024 22:39:37] "[35m[1mPOST /predict/temperature HTTP/1.1[0m" 500 -
+2024-11-25 22:41:02,090 - INFO -  * Detected change in 'C:\\Users\\Ayush\\OneDrive\\Desktop\\ai-ml_project\\app.py', reloading
+2024-11-25 22:41:03,209 - INFO -  * Restarting with stat
+2024-11-25 22:41:11,478 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2024-11-25 22:41:11,836 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-11-25 22:41:14,985 - WARNING -  * Debugger is active!
+2024-11-25 22:41:14,995 - INFO -  * Debugger PIN: 107-346-129
+2024-11-25 22:41:17,028 - INFO - 127.0.0.1 - - [25/Nov/2024 22:41:17] "GET / HTTP/1.1" 200 -
+2024-11-25 22:41:23,744 - INFO - 127.0.0.1 - - [25/Nov/2024 22:41:23] "POST /predict/temperature HTTP/1.1" 200 -

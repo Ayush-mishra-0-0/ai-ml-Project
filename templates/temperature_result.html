@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container fade-in">
+        <h1>Temperature Prediction Result</h1>
+        <div class="result-section">
+            <h3>Max Temperature: </h3>
+            <div class="result">{{ max_temp }}°C</div>
+            <h3>Min Temperature: </h3>
+            <div class="result">{{ min_temp }}°C</div>
+        </div>
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>

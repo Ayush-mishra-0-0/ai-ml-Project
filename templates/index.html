@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Weather Prediction</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="min-h-screen gradient-bg flex items-center justify-center px-4 py-8">
+        <div class="container mx-auto max-w-4xl">
+            <div class="bg-white shadow-2xl rounded-2xl overflow-hidden">
+                <div class="p-8 bg-white">
+                    <h1 class="text-4xl font-extrabold text-center text-gray-800 mb-8">
+                        Weather Prediction System
+                    </h1>
+
+                    <!-- Cloud Cover Prediction Section -->
+                    <div class="md:flex gap-6">
+                        <div class="md:w-1/2 card bg-gray-50 p-6 rounded-lg mb-6 md:mb-0">
+                            <h2 class="text-2xl font-bold text-purple-600 mb-4">Cloud Cover Prediction</h2>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2">Upload Satellite Image</label>
+                                <input type="file" id="cloudCoverImage" 
+                                    class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                                    accept="image/*">
+                            </div>
+                            <button onclick="predictCloudCover()" 
+                                class="w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 transition">
+                                Predict Cloud Cover
+                            </button>
+                            <div id="cloudCoverResult" class="mt-4 text-center"></div>
+                        </div>
+
+                        <!-- Temperature Prediction Section -->
+                        <div class="md:w-1/2 card bg-gray-50 p-6 rounded-lg">
+                            <h2 class="text-2xl font-bold text-blue-600 mb-4">Temperature Prediction</h2>
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-gray-700 mb-2">Cloud Cover</label>
+                                    <input type="number" id="cloudCoverInput" 
+                                        class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        placeholder="Enter cloud cover percentage">
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 mb-2">Humidity (%)</label>
+                                    <input type="number" id="humidityInput" 
+                                        class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        placeholder="Enter humidity percentage">
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 mb-2">Condition</label>
+                                    <select id="conditionInput" 
+                                        class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                        <option value="">Select Weather Condition</option>
+                                        <option value="Overcast">Overcast</option>
+                                        <option value="Few">Few</option>
+                                        <option value="Isolated">Isolated</option>
+                                        <option value="Broken">Broken</option>
+                                        <option value="Scattered">Scattered</option>
+                                    </select>
+                                </div>
+                                <button onclick="predictTemperature()" 
+                                    class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                                    Predict Temperature
+                                </button>
+                                <div id="temperatureResult" class="mt-4 text-center"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function predictCloudCover() {
+            const imageFile = document.getElementById('cloudCoverImage').files[0];
+            const resultDiv = document.getElementById('cloudCoverResult');
+
+            if (!imageFile) {
+                resultDiv.innerHTML = '<p class="text-red-500">Please upload an image</p>';
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('image', imageFile);
+
+            try {
+                const response = await axios.post('/predict/cloudcover', formData, {
+                    headers: { 'Content-Type': 'multipart/form-data' }
+                });
+                
+                resultDiv.innerHTML = `
+                    <p class="text-green-600 font-semibold">
+                        Cloud Cover: ${response.data.cloud_cover.toFixed(2)}%
+                    </p>
+                `;
+            } catch (error) {
+                resultDiv.innerHTML = `
+                    <p class="text-red-500">
+                        Error: ${error.response?.data?.error || 'Unknown error'}
+                    </p>
+                `;
+            }
+        }
+
+        async function predictTemperature() {
+            const cloudCover = document.getElementById('cloudCoverInput').value;
+            const humidity = document.getElementById('humidityInput').value;
+            const condition = document.getElementById('conditionInput').value;
+            const resultDiv = document.getElementById('temperatureResult');
+
+            if (!cloudCover || !humidity || !condition) {
+                resultDiv.innerHTML = '<p class="text-red-500">Please fill all fields</p>';
+                return;
+            }
+
+            try {
+                const response = await axios.post('/predict/temperature', {
+                    cloud_cover: parseFloat(cloudCover),
+                    humidity: parseFloat(humidity),
+                    condition: condition
+                });
+                
+                resultDiv.innerHTML = `
+                    <div class="text-center">
+                        <p class="text-green-600 font-semibold">
+                            Max Temperature: ${response.data.max_temp.toFixed(1)}°C
+                        </p>
+                        <p class="text-blue-600 font-semibold">
+                            Min Temperature: ${response.data.min_temp.toFixed(1)}°C
+                        </p>
+                    </div>
+                `;
+            } catch (error) {
+                resultDiv.innerHTML = `
+                    <p class="text-red-500">
+                        Error: ${error.response?.data?.error || 'Unknown error'}
+                    </p>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>
