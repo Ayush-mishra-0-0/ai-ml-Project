@@ -200,8 +200,6 @@ Test R2: 0.886006145423602
 ## 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 👥 Authors
--Ayush Kumar Mishra (@ayushkum)
 
 ## 🙏 Acknowledgments
 - Thanks to me for mine excellent machine learning library
